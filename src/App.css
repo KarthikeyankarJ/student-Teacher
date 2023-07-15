@@ -2,37 +2,128 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: antiquewhite;
+  margin: 0;
+  height: 10vh;
+  width: 100%;
+
+}
+.main-container{
+  margin: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-btn-grp{
+  display: flex;
+  gap: 1rem;
+  margin-right: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar{
+  width: 20vh;
+  display: flex;
+  position: fixed;
+  background-color: whitesmoke;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.sidebar button{
+  padding: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.stud-collections{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.stud-card{
+  width: 220px;
+  height: 280px;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-btn-grp{
+  padding: 12px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.card-btn-grp button{
+  padding: 12px;
+  border: none;
+  border-radius: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card-btn-grp button:hover{
+  background-color: black;
+  color: white;
+}
+input{
+  padding: 12px;
+  width: 60%;
+}
+.form-grp{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 1rem;
+  padding: 12px;
+}
+.main-content{
+  margin: 0 auto;
+  margin-left: 21vh;
+  border-radius: 1rem;
+}
+
+.sidebar button {
+  padding: 12px;
+  border: none;
+  border-radius: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+.sidebar button:hover{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-btn-grp button{
+  padding: 12px;
+  border: none;
+  border-radius: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-btn-grp button:hover{
+  background-color: black;
+  color: white;
+}
+.nopage-btn{
+  padding: 12px;
+  border: none;
+  border-radius: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+.nopage-btn:hover{
+  background-color: black;
+  color: white;
 }
